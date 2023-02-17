@@ -1,0 +1,116 @@
+1. test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+2. Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+3. Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+
+
+1. Create table employee(
+      id INTEGER,
+      name varchar(50),
+      birthday DATE,
+      email varchar(100));
+
+2. insert into MOCK_DATA (id, first_name, birthday, email) values (1, 'Devonna', '1981-02-17', 'dbestman0@nba.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (2, 'Esme', '1904-09-15', 'eblazdell1@themeforest.net');
+insert into MOCK_DATA (id, first_name, birthday, email) values (3, 'Tabby', '1978-11-17', 'ttoppas2@ftc.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (4, 'Nefen', '1908-11-22', 'ngraysmark3@nih.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (5, 'Elsie', '1944-08-04', 'etrase4@artisteer.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (6, 'Gladys', '1970-07-08', 'gludron5@t-online.de');
+insert into MOCK_DATA (id, first_name, birthday, email) values (7, 'Kurtis', '1949-08-20', 'kroman6@123-reg.co.uk');
+insert into MOCK_DATA (id, first_name, birthday, email) values (8, 'Merell', '1967-03-11', 'mwharmby7@redcross.org');
+insert into MOCK_DATA (id, first_name, birthday, email) values (9, 'Cobb', '1940-02-02', 'ctrusler8@sogou.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (10, 'Alphonse', '1977-01-23', 'agratten9@nbcnews.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (11, 'Reid', '1910-08-13', 'rphittiplacea@mtv.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (12, 'Angus', '1992-12-12', 'ateresab@oakley.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (13, 'Timothee', '2006-09-05', 'tfordec@squarespace.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (14, 'Briny', '2001-10-17', 'bgoodricked@state.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (15, 'Bearnard', '1948-03-14', 'babrahame@geocities.jp');
+insert into MOCK_DATA (id, first_name, birthday, email) values (16, 'Charyl', '1964-05-21', 'cstrowtherf@comcast.net');
+insert into MOCK_DATA (id, first_name, birthday, email) values (17, 'Deonne', '1948-08-29', 'dfallisg@google.cn');
+insert into MOCK_DATA (id, first_name, birthday, email) values (18, 'Lorene', '2018-01-21', 'lmusheth@godaddy.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (19, 'Codi', '1987-12-22', 'cturnpennyi@ibm.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (20, 'Alden', '1911-11-29', 'amcroryj@acquirethisname.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (21, 'Hobie', '1976-02-14', 'hstevanik@hexun.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (22, 'Herve', '1910-01-27', 'hdelacourl@ask.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (23, 'Lexis', '1944-12-25', 'llongmorem@un.org');
+insert into MOCK_DATA (id, first_name, birthday, email) values (24, 'Griffie', '1961-07-30', 'gholbarrown@prlog.org');
+insert into MOCK_DATA (id, first_name, birthday, email) values (25, 'Ofilia', '1977-05-16', 'oallawayo@hhs.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (26, 'Darcy', '1941-10-01', 'djarmanp@japanpost.jp');
+insert into MOCK_DATA (id, first_name, birthday, email) values (27, 'Genevra', '1943-01-07', 'ggrindallq@zdnet.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (28, 'Ignace', '2003-09-10', 'iledgisterr@sciencedaily.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (29, 'Clem', '1998-02-07', 'cbartrums@godaddy.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (30, 'Renae', '1963-12-04', 'rlockwoodt@live.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (31, 'Maryanne', '1935-10-13', 'mgandyu@desdev.cn');
+insert into MOCK_DATA (id, first_name, birthday, email) values (32, 'Fredek', '1923-07-22', 'fscurrellv@imdb.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (33, 'Kipp', '2001-06-24', 'kspeckw@indiegogo.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (34, 'Toddy', '1951-10-18', 'tbrimelowx@sourceforge.net');
+insert into MOCK_DATA (id, first_name, birthday, email) values (35, 'Nissie', '1936-06-02', 'nhoggany@google.com.hk');
+insert into MOCK_DATA (id, first_name, birthday, email) values (36, 'Vere', '2009-02-18', 'vcunradoz@webmd.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (37, 'Faulkner', '1964-11-03', 'fegar10@census.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (38, 'Diane', '2021-06-11', 'dbarnbrook11@abc.net.au');
+insert into MOCK_DATA (id, first_name, birthday, email) values (39, 'Riki', '1932-10-16', 'rclutterbuck12@wiley.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (40, 'Jule', '1980-11-25', 'jaylott13@bravesites.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (41, 'Marya', '1943-03-02', 'mpyser14@tripadvisor.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (42, 'Orran', '1943-07-21', 'oduffet15@china.com.cn');
+insert into MOCK_DATA (id, first_name, birthday, email) values (43, 'Miranda', '1948-06-25', 'mfrankham16@hhs.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (44, 'Sean', '1969-08-22', 'slathleiff17@ow.ly');
+insert into MOCK_DATA (id, first_name, birthday, email) values (45, 'Quintana', '1909-06-19', 'qhellin18@tumblr.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (46, 'Fancie', '1994-02-02', 'fbrinicombe19@surveymonkey.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (47, 'Maggee', '1962-07-29', 'mnorwell1a@addthis.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (48, 'Sibella', '1979-07-20', 'skee1b@berkeley.edu');
+insert into MOCK_DATA (id, first_name, birthday, email) values (49, 'Vincents', '2023-02-04', 'vjagson1c@sitemeter.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (50, 'Staffard', '1977-01-17', 'slere1d@lulu.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (51, 'Haslett', '1936-09-27', 'hcaldicot1e@wordpress.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (52, 'Rosella', '1921-03-29', 'rpepis1f@usgs.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (53, 'Gerda', '1982-06-16', 'gchatin1g@over-blog.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (54, 'Sela', '1957-09-11', 'sberrygun1h@moonfruit.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (55, 'Edin', '1991-05-13', 'ebeecker1i@nasa.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (56, 'Eda', '1934-04-10', 'eyitshak1j@xrea.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (57, 'Jerome', '2021-04-05', 'jleah1k@sun.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (58, 'Ambrosi', '1900-08-04', 'ayantsev1l@wisc.edu');
+insert into MOCK_DATA (id, first_name, birthday, email) values (59, 'Maury', '1908-12-13', 'mmacfarland1m@usa.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (60, 'Lorenza', '1995-01-27', 'lissett1n@army.mil');
+insert into MOCK_DATA (id, first_name, birthday, email) values (61, 'Lenee', '1982-11-05', 'lburge1o@mysql.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (62, 'Jeddy', '1993-04-24', 'jassiratti1p@nationalgeographic.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (63, 'Dorette', '1923-01-18', 'dcastagneto1q@barnesandnoble.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (64, 'Deni', '2001-02-13', 'djanodet1r@blog.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (65, 'Siana', '1930-09-08', 'sflorey1s@constantcontact.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (66, 'Analiese', '1948-11-09', 'agercke1t@amazon.co.uk');
+insert into MOCK_DATA (id, first_name, birthday, email) values (67, 'Case', '1976-05-06', 'cscotchforth1u@cargocollective.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (68, 'Ellie', '1923-09-27', 'eoakeby1v@exblog.jp');
+insert into MOCK_DATA (id, first_name, birthday, email) values (69, 'Berthe', '1987-02-10', 'bcossey1w@nymag.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (70, 'Dinny', '1922-02-12', 'dgibbard1x@xing.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (71, 'Cullan', '2019-12-19', 'chelliker1y@hhs.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (72, 'Willard', '1988-02-19', 'wmccay1z@discovery.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (73, 'Pierre', '2002-03-31', 'pboyack20@epa.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (74, 'Eddi', '1938-08-23', 'eforcade21@liveinternet.ru');
+insert into MOCK_DATA (id, first_name, birthday, email) values (75, 'Dasha', '1948-10-09', 'dleake22@qq.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (76, 'Vivyanne', '1971-10-18', 'vstruan23@hugedomains.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (77, 'Donaugh', '1939-06-16', 'djirka24@smh.com.au');
+insert into MOCK_DATA (id, first_name, birthday, email) values (78, 'Hagen', '1929-07-18', 'hpioli25@friendfeed.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (79, 'Patrizia', '2018-06-19', 'pyakhin26@marriott.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (80, 'Salvador', '2019-01-14', 'sabbatt27@bigcartel.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (81, 'Elie', '1930-08-25', 'emcewan28@wufoo.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (82, 'Haily', '1951-12-25', 'htrowbridge29@jigsy.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (83, 'Noland', '1997-11-23', 'nvalentetti2a@wikispaces.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (84, 'Mallorie', '1978-02-02', 'mmcwilliams2b@seattletimes.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (85, 'Jonathon', '1901-11-24', 'jdinse2c@state.tx.us');
+insert into MOCK_DATA (id, first_name, birthday, email) values (86, 'Karin', '1951-09-09', 'khrus2d@addthis.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (87, 'Northrop', '1938-06-10', 'nsimonsson2e@netscape.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (88, 'Lyssa', '1963-06-08', 'llangrish2f@cdc.gov');
+insert into MOCK_DATA (id, first_name, birthday, email) values (89, 'Guillaume', '1947-03-08', 'ggrubb2g@vkontakte.ru');
+insert into MOCK_DATA (id, first_name, birthday, email) values (90, 'Paola', '2013-09-07', 'pgarter2h@bbc.co.uk');
+insert into MOCK_DATA (id, first_name, birthday, email) values (91, 'Naomi', '1925-02-26', 'nprose2i@soup.io');
+insert into MOCK_DATA (id, first_name, birthday, email) values (92, 'Tabbi', '1924-03-24', 'taked2j@flickr.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (93, 'Izabel', '1918-08-31', 'idurtnell2k@topsy.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (94, 'Nickolaus', '1985-04-21', 'nbeecham2l@columbia.edu');
+insert into MOCK_DATA (id, first_name, birthday, email) values (95, 'Rozanna', '1920-08-12', 'rtanswill2m@goo.gl');
+insert into MOCK_DATA (id, first_name, birthday, email) values (96, 'Jan', '2007-06-29', 'jbrear2n@bbc.co.uk');
+insert into MOCK_DATA (id, first_name, birthday, email) values (97, 'Anatola', '1967-05-13', 'aveness2o@discuz.net');
+insert into MOCK_DATA (id, first_name, birthday, email) values (98, 'Yorgo', '1955-01-10', 'ymolesworth2p@auda.org.au');
+insert into MOCK_DATA (id, first_name, birthday, email) values (99, 'Nichole', '1953-05-10', 'nmerigon2q@symantec.com');
+insert into MOCK_DATA (id, first_name, birthday, email) values (100, 'Lenora', '1981-12-10', 'lcuxson2r@lycos.com');
+
+
+3. 
